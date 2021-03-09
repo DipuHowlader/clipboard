@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+
+    --DarkGrayishBlue:hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+p{
+    color: var(--DarkGrayishBlue);
+}
+ul li{
+    list-style:none;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+.section-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*-------------- header part ------------ */
+
+header{
+    background: url(./images/bg-header-desktop.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-height:460px;
+    margin-bottom: 150px;
+}
+.header-content{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.header-content h1.center-logo{
+    font-size: 120px;
+    font-weight: 400;
+    color: var(--StrongCyan);
+}
+.header-content h2{
+    font-size: 40px;
+    color: var(--GrayishBlue);
+    margin-top: 30px;
+}
+.header-content p{
+    color: var(--DarkGrayishBlue);
+    margin:35px 0;
+}
+.header-btn{
+    margin: 20px 0;
+}
+.header-btn .btn{
+    display: inline-block;
+    padding: 20px 65px;
+    background: var(--StrongCyan);
+    color: #fff;
+    border-radius: 30px;
+    box-shadow:4px 3px 10px 6px rgb(107 96 96 / 39%);
+    margin: 0 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.header-content .header-btn .btn2{
+    background: var(--LightBlue);
+}
+#frist_section{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.section-header h2{
+    font-size: 40px;
+    color: var(--DarkGrayishBlue);
+}
+.section-header p{
+    margin: 30px 0;
+    font-size: 17px;
+}
+.wraffer{
+    margin: 70px 0;
+    justify-content: space-around;
+}
+.wraffer .right_part{
+    text-align: justify;
+    padding: 50px 70px 0;
+}.wraffer .right_part li{
+    margin: 30px 0;
+}
+.wraffer .right_part h2{
+    font-size: 20px;
+}.wraffer .right_part p{
+    font-size: 15px;
+    margin: 10px 0 20px;
+    font-weight: 400;
+}
+#third-section{
+    margin: 50px;
+}
+#third-section .img-box{
+    margin: 50px auto 0;
+    width: 75%;
+}
+#forth-section{
+    margin-bottom: 150px;
+}
+.container{
+    width: 80%;
+    margin: 40px auto;
+}
+.bottom-content,.brand-bottom{
+    justify-content: space-around;
+    margin: 140px 0 0;
+    height: auto;
+    align-items: center;
+}
+.bottom-item{
+    flex-basis: 30%;
+    text-align: center;
+   
+}.bottom-item h3{
+    color: var(--DarkGrayishBlue);
+    font-size: 20px;
+    margin: 20px 0;
+}.bottom-item p{
+    font-size: 15px;
+    color: var(--GrayishBlue);
+   letter-spacing: 1.2px;
+}
+.bottom-img{
+    width: 15%;
+    margin: auto;
+}
+.bottom-item-brand {
+    margin: 0 15px;
+}
+#fifth{
+    margin-bottom: 150px;
+}
+footer{
+ background: hsl(201deg 13% 83%);
+ justify-content: space-around;
+ align-items: center;
+ width: 100%;
+ min-height: 70px;
+}
+.footer .logo{
+    font-size: 40px;
+    color: var(--StrongCyan);
+}
+.footer .middle a{
+    display: inline-block;
+    color: var(--DarkGrayishBlue);
+    font-size: 17px;
+    margin:5px 20px;
+}.footer .middle a:hover{
+    color: var(--LightBlue);
+}
+.social-links ul li{
+    margin: 0 10px;
+}
+.social-links ul li a{
+    z-index: 9999;
+
+}
+.social-links ul li a img:hover{
+    color: var(--StrongCyan);
+}
+.all-links{
+    display: flex;
+}
+
+/* ---------------media query----------- */
+@media(max-width:767px){
+    .d-flex{
+        flex-direction: column;
+    }
+    .section-header h2 {
+        font-size: 30px;
+    }
+    .section-header{
+        padding: 0 40px;
+    }
+    .header-btn .btn{
+        margin: 20px 0;
+        padding: 20px 80px;
+    }
+    .bottom-content, .brand-bottom{
+        margin: 0;
+    }
+    .bottom-item,.bottom-item-brand{
+        margin: 30px 0;
+    }
+    .footer .middle{
+        margin: 50px 0;
+        text-align: center;
+    }
+}
